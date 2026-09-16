@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathyajith Saliya — Senior Software Engineer</title>
+<meta name="description" content="Sathyajith Saliya — Senior Software Engineer specializing in Java, Spring Boot, Angular and event-driven microservices.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav container">
+    <a href="#home" class="logo">SS<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#work" class="nav-link" data-section="work">Work</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#beyond" class="nav-link" data-section="beyond">Beyond Code</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg id="iconSun" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1ZM4.5 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1Zm18 0a1 1 0 0 1-1 1h-1.5a1 1 0 1 1 0-2H21a1 1 0 0 1 1 1ZM6.34 6.34a1 1 0 0 1-1.41 0L3.87 5.28a1 1 0 1 1 1.41-1.41l1.06 1.06a1 1 0 0 1 0 1.41Zm12.73 12.73a1 1 0 0 1-1.41 0l-1.06-1.06a1 1 0 1 1 1.41-1.41l1.06 1.06a1 1 0 0 1 0 1.41ZM6.34 17.66a1 1 0 0 1 0 1.41l-1.06 1.06a1 1 0 1 1-1.41-1.41l1.06-1.06a1 1 0 0 1 1.41 0Zm12.73-12.73a1 1 0 0 1 0 1.41l-1.06 1.06a1 1 0 1 1-1.41-1.41l1.06-1.06a1 1 0 0 1 1.41 0ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+        <svg id="iconMoon" viewBox="0 0 24 24" width="18" height="18" style="display:none"><path fill="currentColor" d="M20.742 13.045a8.088 8.088 0 0 1-2.077.273c-4.508 0-8.16-3.653-8.16-8.16 0-.72.093-1.417.267-2.079a.5.5 0 0 0-.64-.61A10.05 10.05 0 0 0 3.5 12.5C3.5 18.023 7.977 22.5 13.5 22.5a10.05 10.05 0 0 0 9.53-6.632.5.5 0 0 0-.61-.64c-.363.09-.744.147-1.678.147Z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">H.M Sathyajith Saliya <span class="hero-surname">Ariyakumara</span></h1>
+      <h2 class="hero-role reveal">
+        <span id="typewriter"></span><span class="cursor-blink">|</span>
+      </h2>
+      <p class="hero-desc reveal">
+        3+ years engineering scalable systems in <strong>Java</strong> &amp; <strong>JavaScript</strong> —
+        building event-driven Spring Boot microservices and responsive Angular apps for
+        UK healthcare platforms used in real clinical settings.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        <a href="assets/cv/SathyajithSaliyaCV2026.pdf" class="btn btn-ghost" download>Download CV ↓</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="3" data-suffix="+">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="3" data-suffix="">0</span>
+          <span class="stat-label">Healthcare Platforms Shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="15" data-suffix="+">0</span>
+          <span class="stat-label">Technologies Mastered</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag reveal">01 — About</p>
+      <h2 class="section-title reveal">More than the stack trace</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a Senior Software Engineer at <strong>Vital Hub Innovations Lab</strong>, where I design
+            microservices for real-time healthcare visibility platforms used across the UK's NHS
+            ecosystem. My days are split between untangling event-driven architectures with
+            <strong> RabbitMQ</strong>, shaping clean APIs in <strong>Spring Boot</strong>, and building
+            interfaces that don't feel like enterprise software in <strong>Angular</strong>.
+          </p>
+          <p>
+            I got here from a Computer Science degree at the <strong>University of Kelaniya</strong>,
+            a stint at <strong>Virtusa</strong> shadowing seniors on Java EE systems, and a genuine
+            habit of asking "why does this break in production" until I actually know the answer.
+            Outside of sprint ceremonies, I mentor junior engineers, run knowledge-transfer sessions,
+            and lead the kind of code reviews that catch things before they become 2am pages.
+          </p>
+          <p>
+            When I'm not shipping features, I'm usually training in <strong>karate</strong>
+            (former university team captain), chasing new places to eat, or sketching — I still
+            introduce myself as <em>"programmer + art"</em> before anything else.
+          </p>
+          <div class="about-tags">
+            <span>🏗️ Event-Driven Design</span>
+            <span>🔌 API Architecture</span>
+            <span>🚀 Performance Tuning</span>
+            <span>🔁 Legacy Modernization</span>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="card-glow"></div>
+          <div class="info-row"><span>Location</span><strong>Thalawathugoda, Sri Lanka</strong></div>
+          <div class="info-row"><span>Role</span><strong>Senior Software Engineer</strong></div>
+          <div class="info-row"><span>Company</span><strong>Vital Hub Innovations Lab</strong></div>
+          <div class="info-row"><span>Focus</span><strong>Java · Spring Boot · Angular</strong></div>
+          <div class="info-row"><span>Domain</span><strong>UK Healthcare Systems</strong></div>
+          <div class="info-row"><span>Status</span><strong class="status-dot">Open to interesting problems</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <p class="section-tag reveal">02 — Journey</p>
+      <h2 class="section-title reveal">Where I've built things</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2025 — Present</span>
+            <h3>Senior Software Engineer</h3>
+            <p class="timeline-org">Vital Hub Innovations Lab</p>
+            <p>Leading microservice design for SHREWD, mentoring engineers, and driving CI/CD
+              and architectural decisions across the healthcare product suite.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2023 — Oct 2025</span>
+            <h3>Software Engineer</h3>
+            <p class="timeline-org">Vital Hub Innovations Lab</p>
+            <p>Built event-driven microservices with Spring Boot + RabbitMQ, integrated
+              MyPathway into Synopsis, and led the Struts → Spring migration effort.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Dec 2022 — Oct 2023</span>
+            <h3>Associate Software Engineer</h3>
+            <p class="timeline-org">Vital Hub Innovations Lab</p>
+            <p>Shipped features and resolved complex production bugs for Synopsis, an
+              enterprise UK healthcare platform, while ramping up on Angular and gRPC.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Dec 2021 — Dec 2022</span>
+            <h3>Associate Engineer - Technology</h3>
+            <p class="timeline-org">Virtusa Pvt. Ltd</p>
+            <p>Gained hands-on and shadow-level experience across Java EE, SOAP/REST
+              services, Spring Boot and Hibernate through structured training.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot-alt"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Feb 2018 — Oct 2021</span>
+            <h3>BSc. Hons. Computer Science — 2nd Class Upper</h3>
+            <p class="timeline-org">University of Kelaniya, Sri Lanka</p>
+            <p>President of the Statistics &amp; Computer Science Students' Association.
+              Captain of the university Karate team (2021), University Colors award (2019).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <p class="section-tag reveal">03 — Featured Work</p>
+      <h2 class="section-title reveal">Systems I've helped build</h2>
+      <p class="section-sub reveal">Real platforms, real patients — software where bugs aren't just tickets.</p>
+
+      <div class="work-grid">
+        <article class="work-card reveal">
+          <div class="work-icon">🏥</div>
+          <h3>SHREWD</h3>
+          <p class="work-tagline">System-wide patient flow visibility</p>
+          <p>A real-time UK healthcare platform giving hospitals system-wide visibility to
+            improve patient flow and care outcomes. Designed and built core microservices
+            using Spring Boot, with RabbitMQ powering event-driven processing across services.</p>
+          <div class="work-tags">
+            <span>Spring Boot</span><span>RabbitMQ</span><span>Microservices</span>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-icon">🧬</div>
+          <h3>Synopsis</h3>
+          <p class="work-tagline">Enterprise healthcare platform modernization</p>
+          <p>Contributed new features and resolved complex production bugs on this
+            enterprise-level UK healthcare product, while supporting a large-scale
+            migration from Struts to Spring and building out CI/CD pipelines.</p>
+          <div class="work-tags">
+            <span>Struts → Spring</span><span>CI/CD</span><span>Angular 18</span>
+          </div>
+        </article>
+        <article class="work-card reveal">
+          <div class="work-icon">🔗</div>
+          <h3>MyPathway Integration</h3>
+          <p class="work-tagline">Cross-platform interoperability</p>
+          <p>Integrated MyPathway — another major UK healthcare platform — into Synopsis,
+            using HL7/FHIR standards and REST/gRPC APIs to enhance interoperability
+            between clinical systems.</p>
+          <div class="work-tags">
+            <span>HL7</span><span>FHIR</span><span>REST / gRPC</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-tag reveal">04 — Toolbox</p>
+      <h2 class="section-title reveal">What I build with</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="90"><span class="skill-name">Java</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-level="85"><span class="skill-name">JavaScript</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+            <div class="skill-bar" data-level="80"><span class="skill-name">SQL</span><div class="bar-track"><div class="bar-fill"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="chip-cloud">
+            <span>Spring Boot</span><span>Spring MVC</span><span>Spring Data JPA</span>
+            <span>Hibernate</span><span>Angular 18</span><span>JSP</span>
+            <span>Thymeleaf</span><span>jQuery</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Architecture &amp; APIs</h3>
+          <div class="chip-cloud">
+            <span>Microservices</span><span>Monolithic Systems</span><span>REST</span>
+            <span>gRPC</span><span>SOAP</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Messaging &amp; Integration</h3>
+          <div class="chip-cloud">
+            <span>RabbitMQ</span><span>HL7</span><span>FHIR</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>DevOps &amp; Tools</h3>
+          <div class="chip-cloud">
+            <span>Docker</span><span>Jenkins</span><span>Git</span><span>Bitbucket</span>
+            <span>Azure DevOps</span><span>IntelliJ IDEA</span><span>Postman</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Core Strengths</h3>
+          <ul class="strength-list">
+            <li>Event-driven system design &amp; async processing</li>
+            <li>API design, integration &amp; debugging</li>
+            <li>Performance tuning &amp; production troubleshooting</li>
+            <li>Legacy modernization (Struts → Spring)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND THE CODE -->
+  <section class="section" id="beyond">
+    <div class="container">
+      <p class="section-tag reveal">05 — Beyond the Code</p>
+      <h2 class="section-title reveal">Life outside the IDE</h2>
+      <p class="section-sub reveal">"#programmer #art" — that's still how I'd describe myself in six words.</p>
+
+      <div class="beyond-grid">
+        <div class="beyond-card reveal">
+          <div class="beyond-icon">🥋</div>
+          <h3>Karate</h3>
+          <p>Captain of the University of Kelaniya Karate team (2021), Vice-Captain (2020),
+            and a University Colors award recipient (2019). Discipline on the mat translates
+            directly to discipline in production code.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <div class="beyond-icon">✈️</div>
+          <h3>Travel</h3>
+          <p>Always chasing the next trip — from island-hopping to exploring places like
+            Bali — collecting stories and street food between flights.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <div class="beyond-icon">🎨</div>
+          <h3>Art</h3>
+          <p>Sketching and visual art are the analog counterpart to writing code — same
+            instinct for composition, just without the compiler.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <div class="beyond-icon">🍜</div>
+          <h3>Food</h3>
+          <p>An enthusiastic taste-tester of anything new — cooking experiments at home
+            and hunting down the best local spots wherever I travel.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <div class="beyond-icon">🎓</div>
+          <h3>Mentoring</h3>
+          <p>Former President of the Statistics &amp; Computer Science Students' Association;
+            now mentoring junior engineers and running knowledge-transfer sessions at work.</p>
+        </div>
+        <div class="beyond-card reveal">
+          <div class="beyond-icon">🇬🇧</div>
+          <h3>British Computer Society</h3>
+          <p>Member of the British Computer Society, Sri Lanka Section — staying connected
+            to the wider professional computing community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <p class="section-tag reveal">06 — Contact</p>
+      <h2 class="section-title reveal">Let's build something worth shipping</h2>
+      <p class="section-sub reveal">
+        Open to conversations about backend architecture, healthcare tech, or just
+        good API design. Reach out — I reply faster than a flaky CI pipeline.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="mailto:hmsathyajith@gmail.com">
+          <span class="contact-icon">✉️</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hmsathyajith@gmail.com</span>
+        </a>
+        <a class="contact-card reveal" href="tel:+94717062353">
+          <span class="contact-icon">📱</span>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+94 71 706 2353</span>
+        </a>
+        <a class="contact-card reveal" href="https://www.linkedin.com/in/sathyajith-saliya-software-engineer" target="_blank" rel="noopener">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">sathyajith-saliya</span>
+        </a>
+        <a class="contact-card reveal" href="https://github.com/hmsathyajith" target="_blank" rel="noopener">
+          <span class="contact-icon">🐙</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@hmsathyajith</span>
+        </a>
+        <a class="contact-card reveal" href="https://www.instagram.com/sath_yajith96" target="_blank" rel="noopener">
+          <span class="contact-icon">📸</span>
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@sath_yajith96</span>
+        </a>
+        <a class="contact-card reveal" href="https://www.facebook.com/share/1ArSh7KLBG/" target="_blank" rel="noopener">
+          <span class="contact-icon">👤</span>
+          <span class="contact-label">Facebook</span>
+          <span class="contact-value">Sathyajith Saliya</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>Designed &amp; built by H.M Sathyajith Saliya Ariyakumara · <span id="year"></span></p>
+    <a href="#home" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
