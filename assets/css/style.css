@@ -708,6 +708,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.85rem;
 }
 .back-to-top:hover { color: var(--accent); }
+.footer-note { font-size: 0.78rem; opacity: 0.8; }
 
 /* =========================================================
    Responsive
