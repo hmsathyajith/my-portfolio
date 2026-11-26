@@ -67,8 +67,8 @@
           <span class="stat-label">Years Experience</span>
         </div>
         <div class="stat">
-          <span class="stat-num" data-target="3" data-suffix="">0</span>
-          <span class="stat-label">Healthcare Platforms Shipped</span>
+          <span class="stat-num" data-target="4" data-suffix="">0</span>
+          <span class="stat-label">Production Platforms Shipped</span>
         </div>
         <div class="stat">
           <span class="stat-num" data-target="15" data-suffix="+">0</span>
@@ -101,6 +101,12 @@
             and lead the kind of code reviews that catch things before they become 2am pages.
           </p>
           <p>
+            Outside Vital Hub I work directly with founders. Most recently I took
+            <strong>KyuPilot</strong> from a client's idea to a live SaaS product: I ran the
+            conversations, shaped the requirements and steered delivery, using AI-assisted
+            development to move fast without cutting corners on security or quality.
+          </p>
+          <p>
             When I'm not shipping features, I'm usually at the gym staying in shape, chasing new
             places to eat, or sketching — the discipline carries over from my competitive
             <strong>karate</strong> days (former university team captain). I still introduce myself
@@ -111,6 +117,7 @@
             <span>🔌 API Architecture</span>
             <span>🚀 Performance Tuning</span>
             <span>🔁 Legacy Modernization</span>
+            <span>🧭 Idea → Product</span>
           </div>
         </div>
         <div class="about-card reveal">
@@ -133,6 +140,17 @@
       <h2 class="section-title reveal">Where I've built things</h2>
 
       <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot-alt"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Sep 2026 — Nov 2026 · Freelance</span>
+            <h3>Product Lead &amp; Engineer</h3>
+            <p class="timeline-org">KyuPilot — SaaS for martial arts academies (Dubai-based client)</p>
+            <p>Turned a founder's idea into a live multi-academy SaaS in 11 weeks. Led discovery,
+              requirements and delivery, and contributed ~30% of the engineering alongside one other
+              developer using AI-assisted development.</p>
+          </div>
+        </div>
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
@@ -193,7 +211,66 @@
     <div class="container">
       <p class="section-tag reveal">03 — Featured Work</p>
       <h2 class="section-title reveal">Systems I've helped build</h2>
-      <p class="section-sub reveal">Real platforms, real patients — software where bugs aren't just tickets.</p>
+      <p class="section-sub reveal">Production software — from NHS clinical platforms to a live SaaS product I took from idea to launch.</p>
+
+      <article class="work-feature reveal">
+        <div class="work-feature-head">
+          <div>
+            <div class="work-feature-meta">
+              <span class="live-badge"><span class="live-dot"></span>Live</span>
+              <span class="work-feature-kind">Freelance · Product Lead &amp; Engineer · Sep – Nov 2026</span>
+            </div>
+            <h3>KyuPilot</h3>
+            <p class="work-tagline">From a founder's idea to a live multi-academy SaaS — in 11 weeks</p>
+          </div>
+          <a href="https://app.kyupilot.com" class="btn btn-ghost work-feature-link" target="_blank" rel="noopener">Visit product ↗</a>
+        </div>
+
+        <div class="work-feature-body">
+          <div class="case-block">
+            <h4>The idea</h4>
+            <p>A Dubai-based founder had a single-academy dojo management prototype and a bigger
+              vision: a SaaS product any martial arts academy could sign up for and run on its own.
+              There was no technical team to get it there.</p>
+          </div>
+          <div class="case-block">
+            <h4>My role</h4>
+            <p>I was the bridge between the founder and the build. I ran discovery sessions, turned
+              the idea into a requirements doc and 53 user stories, scoped a sharp V1, and planned
+              the move from one academy to a true multi-tenant SaaS. I worked alongside one other
+              developer, owning product and delivery while doing roughly 30% of the engineering —
+              the multi-academy security model, code reviews and QA fixes.</p>
+          </div>
+          <div class="case-block">
+            <h4>How we built it</h4>
+            <p>AI-assisted development with Claude Code let two people ship what would normally need a
+              larger team — while we kept humans on the decisions that matter: architecture, data
+              isolation, code review and release sign-off. We cut ~64k lines of out-of-scope code,
+              enforced academy isolation in the database itself, and backed it with automated
+              security tests before anything reached production.</p>
+          </div>
+          <div class="case-block">
+            <h4>What shipped</h4>
+            <p>Academy self sign-up with a free trial, student &amp; family profiles, billing with
+              discounts, VAT and partial payments, membership renewals and freezes, attendance with
+              absence alerts, belt gradings, staff roles &amp; permissions, and branch reports — live
+              across staging and production with three tagged releases.</p>
+          </div>
+        </div>
+
+        <div class="work-feature-stats">
+          <div><strong>11 wks</strong><span>Idea → production</span></div>
+          <div><strong>53</strong><span>User stories delivered</span></div>
+          <div><strong>930+</strong><span>Automated tests</span></div>
+          <div><strong>34/34</strong><span>Tables with row-level security</span></div>
+        </div>
+
+        <div class="work-tags">
+          <span>Product Management</span><span>AI-Assisted Dev</span><span>Multi-tenant SaaS</span>
+          <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL RLS</span>
+          <span>Cloudflare</span><span>GitHub Actions</span>
+        </div>
+      </article>
 
       <div class="work-grid">
         <article class="work-card reveal">
@@ -275,6 +352,21 @@
           <div class="chip-cloud">
             <span>Docker</span><span>Jenkins</span><span>Git</span><span>Bitbucket</span>
             <span>Azure DevOps</span><span>IntelliJ IDEA</span><span>Postman</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Product &amp; Delivery</h3>
+          <div class="chip-cloud">
+            <span>Requirements Discovery</span><span>User Stories</span><span>MVP Scoping</span>
+            <span>Stakeholder Communication</span><span>Release Planning</span>
+            <span>AI-Assisted Dev (Claude Code)</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Modern Web &amp; SaaS</h3>
+          <div class="chip-cloud">
+            <span>Next.js</span><span>TypeScript</span><span>Supabase</span>
+            <span>PostgreSQL RLS</span><span>Multi-tenancy</span><span>Cloudflare</span>
           </div>
         </div>
         <div class="skill-group reveal">

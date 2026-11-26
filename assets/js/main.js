@@ -88,6 +88,8 @@
   /* ---------- Typewriter ---------- */
   const roles = [
     'Senior Software Engineer',
+    'Product-Minded Engineer',
+    'Idea → Live SaaS Builder',
     'Spring Boot Microservices Builder',
     'Angular Frontend Developer',
     'Event-Driven Systems Designer',
